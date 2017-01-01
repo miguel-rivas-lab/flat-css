@@ -1,6 +1,6 @@
 # FlatCSS
 
-Apply Flat Style to your Buttons.
+Apply flat style to your buttons.
 
 ## How to use it?
 
