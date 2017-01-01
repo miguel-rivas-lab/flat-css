@@ -1,0 +1,94 @@
+doctype html
+html
+	head
+		include jade/vars
+		include jade/metatags
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet", type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Bitter", rel="stylesheet", type="text/css")
+		link(href="css/application.css", rel="stylesheet")
+		include jade/analytics
+
+	body
+
+		header
+			h1
+				| Flat
+				strong CSS
+			p Apply Flat Style to your Buttons. Download the latest version in the following links
+			a.flat(href="#") CSS
+			a.flat(href="#") CSS Min
+			a.flat(href="#") SCSS
+
+		section.gallery
+			.container
+				button.flat No Color
+				button.flat.yellow Yellow
+				button.flat.orange Orange
+				button.flat.gray Gray/Grey
+				button.flat.brown Brown
+				button.flat.red Red
+				button.flat.fucsia Fucsia
+				button.flat.purple Purple
+				button.flat.blue Blue
+				button.flat.light-blue Light Blue
+				button.flat.cyan Cyan
+				button.flat.mint Mint
+				button.flat.green Green
+
+		section.content
+			.container
+				h2 How to use it?
+
+				p Include the stylesheet on your website
+				code
+					p &lt;head&gt;
+					p
+						| &lt;link rel="stylesheet" href="
+						strong flat.css
+						|"&gt;
+					p &lt;/head&gt;
+
+				p
+					| Add the class "
+					strong flat
+					|" to the element you want to give flat button style
+				code
+					p
+						| &lt;button class="
+						strong flat
+						"&gt;
+						em Button
+						| &lt;/button&gt;
+
+				p Also you can add the color class which can be:
+				ul
+					li Yellow
+					li Orange
+					li Gray/Grey
+					li Brown
+					li Red
+					li Fucsia
+					li Purple
+					li Blue
+					li Light Blue
+					li Cyan
+					li Green
+
+				code
+					p
+						| &lt;button class="
+						strong flat red
+						"&gt;
+						em Button
+						| &lt;/button&gt;
+
+				p Without the color class it will be light gray for default.
+
+				h2 The result
+				button.flat.red Button
+
+		footer
+			p
+				| Go to 
+				a(href="http://aguacatekun.com/") Aguacatekun.com 
+				| and share your love.
