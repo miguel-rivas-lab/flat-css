@@ -106,19 +106,19 @@
 }
 
 .flat.yellow {
-  background-color: #ffcf5d;
-  box-shadow: 0px 3px 0 #ffc02a;
+  background-color: #e6b031;
+  box-shadow: 0px 3px 0 #cb9619;
 }
 
 .flat.yellow:hover {
-  background-color: #ffc02a;
-  box-shadow: 0px 3px 0 #f6ad00;
+  background-color: #cb9619;
+  box-shadow: 0px 3px 0 #9e7413;
 }
 
 .flat.yellow:active {
-  background-color: #ffedc3;
-  box-shadow: 0px 3px 0 #ffde90;
-  color: #f6ad00;
+  background-color: #f1d38c;
+  box-shadow: 0px 3px 0 #ecc15e;
+  color: #9e7413;
 }
 
 .flat.purple {
