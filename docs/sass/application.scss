@@ -1,5 +1,4 @@
 @import '../../dist/flat';
-$f_bitter: 'Bitter', $f_sans_serif;
 
 body, html {
 	padding: 0;
@@ -61,7 +60,6 @@ li {
 
 h1 {
 	font-size: 55pt;
-	font-family: $f_bitter;
 	line-height: 1;
 	display: block;
 
