@@ -69,7 +69,8 @@ And the colors could be the same:
 
 ---------------------------------------
 *Go to [Aguacatekun.com](http://aguacatekun.com) and share your love.*
- [View the website of the project](https://aguacatek.github.io/flatCSS/)
+
+[View the website of the project](https://aguacatek.github.io/flatCSS/)
 
 --------------------------------------- 
  License MIT
