@@ -11,20 +11,23 @@ html
 	body
 
 		header
-			h1
-				| Flat
-				strong CSS
-			p Apply Flat Style to your Buttons. Download the latest version in the following links
-			a.flat(href="docs/flat.css", download) CSS
-			a.flat(href="docs/flat.min.css", download) CSS Min
-			a.flat(href="docs/flat.scss", download) SCSS
+			.container
+				h1
+					| Flat
+					strong CSS
+				p Apply Flat Style to your Buttons. Download the latest version in the following links
+				a.flat.green(href="docs/flat.css", download) CSS
+				a.flat.green(href="docs/flat.min.css", download) CSS Min
+				a.flat.green(href="docs/flat.scss", download) SCSS
 
+		hr
 
 		section.content
 			.container
 				h2 How to use it?
 
 				p Include the stylesheet on your website
+
 				code
 					p &lt;head&gt;
 					p
@@ -37,6 +40,7 @@ html
 					| Add the class "
 					strong flat
 					|" to the element you want to give flat button style
+
 				code
 					p
 						| &lt;button class="
@@ -47,7 +51,7 @@ html
 
 				p Also you can add the color class which can be:
 				section.gallery
-					button.flat.yellow Yellow
+					button.flat.mustard Mustard
 					button.flat.orange Orange
 					button.flat.brown Brown
 					button.flat.red Red
@@ -61,7 +65,6 @@ html
 					button.flat.gray Gray/Grey
 					button.flat No Color
 
-
 				code
 					p
 						| &lt;button class="
@@ -72,12 +75,51 @@ html
 
 				p Without the color class it will be light gray for default.
 
-				h2 The result
-				button.flat.red Button
+				hr
+
+				h2 How to apply the Outline Style?
+
+				p
+					| If you prefer an outline style you can add the class "
+					strong outline
+					|" to the element you want to give the style
+
+				code
+					p
+						| &lt;button class="
+						strong outline
+						"&gt;
+						em Button
+						| &lt;/button&gt;
+
+				p And the colors could be:
+
+				section.gallery
+					button.outline.mustard Mustard
+					button.outline.orange Orange
+					button.outline.brown Brown
+					button.outline.red Red
+					button.outline.fucsia Fucsia
+					button.outline.purple Purple
+					button.outline.blue Blue
+					button.outline.light-blue Light Blue
+					button.outline.cyan Cyan
+					button.outline.mint Mint
+					button.outline.green Green
+					button.outline.gray Gray/Grey
+					button.outline No Color
+
+				code
+					p
+						| &lt;button class="
+						strong outline blue
+						"&gt;
+						em Button
+						| &lt;/button&gt;
 
 		footer
 			p
 				| Go to 
 				a(href="http://aguacatekun.com/") Aguacatekun.com 
 				| and share your love.
-			a(href="https://github.com/aguacatek/flatCSS").outline.chartreuse View this projects on Github
+			a(href="https://github.com/aguacatek/flatCSS").outline.blue View this projects on Github
