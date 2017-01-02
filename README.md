@@ -37,7 +37,7 @@ Also you can add the color class which can be:
 <button class="flat red">Button</button>
 ```
 
-Without the color class it will be light gray for default.
+Without the color class it will be light gray by default.
 
 ---------------------------------------
 

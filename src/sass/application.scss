@@ -1,4 +1,5 @@
-@import '../docs/flat';
+@import '../../dist/flat';
+$f_bitter: 'Bitter', $f_sans_serif;
 
 body, html {
 	padding: 0;
@@ -82,7 +83,6 @@ section.gallery {
 
 section.content {
 	text-align: left;
-
 }
 
 header {
