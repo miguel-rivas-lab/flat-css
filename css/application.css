@@ -105,19 +105,19 @@
 }
 
 .flat.yellow {
-  background-color: #ffcf5d;
-  box-shadow: 0px 3px 0 #ffc02a;
+  background-color: #e6b031;
+  box-shadow: 0px 3px 0 #cb9619;
 }
 
 .flat.yellow:hover {
-  background-color: #ffc02a;
-  box-shadow: 0px 3px 0 #f6ad00;
+  background-color: #cb9619;
+  box-shadow: 0px 3px 0 #9e7413;
 }
 
 .flat.yellow:active {
-  background-color: #ffedc3;
-  box-shadow: 0px 3px 0 #ffde90;
-  color: #f6ad00;
+  background-color: #f1d38c;
+  box-shadow: 0px 3px 0 #ecc15e;
+  color: #9e7413;
 }
 
 .flat.purple {
@@ -260,7 +260,7 @@ body, html {
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 20px 20px 40px;
 }
 
 p {
@@ -276,7 +276,7 @@ strong {
 }
 
 code {
-  background-color: #3e3f4a;
+  background-color: #343540;
   color: #1dd660;
   font-family: courier, mono;
   display: block;
@@ -315,8 +315,10 @@ h1 strong {
 }
 
 section.gallery {
-  background: #242733;
-  margin: 23px 0 0;
+  background: #343540;
+  margin: 12px 0;
+  text-align: center;
+  padding: 20px;
 }
 
 section.content {
@@ -328,7 +330,7 @@ section.content h2 {
 }
 
 header {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 header h1 {
@@ -339,7 +341,7 @@ footer {
   display: block;
   background: #222;
   color: #ccc;
-  padding: 1px 0;
+  padding: 3px 0 14px;
 }
 
 footer p {
@@ -353,4 +355,30 @@ footer a {
 
 footer a:hover {
   color: #edff00;
+}
+
+.outline {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 7pt;
+  font-weight: bold;
+  font-family: "Montserrat", helvetica, sans-serif, verdana;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  padding: 12px 32px;
+  margin: 7px 4px 4px;
+  -webkit-transition: all 200ms ease;
+          transition: all 200ms ease;
+}
+
+.outline:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.outline .chartreuse {
+  color: #d6e41c;
+  border-color: #edff00;
+  background: transparent;
 }

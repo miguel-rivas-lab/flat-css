@@ -12,7 +12,7 @@ body, html {
 .container {
 	max-width: 900px;
 	margin: auto;
-	padding: 40px 20px;
+	padding: 20px 20px 40px;
 }
 
 p {
@@ -28,7 +28,7 @@ strong {
 }
 
 code {
-	background-color: #3e3f4a;
+	background-color: #343540;
 	color: #1dd660;
 	font-family: courier, mono;
 	display: block;
@@ -38,7 +38,6 @@ code {
 	em {
 		color: #ccc;
 	}
-
 }
 
 ul {
@@ -66,8 +65,10 @@ h1 {
 }
 
 section.gallery {
-	background: #242733;
-	margin: 23px 0 0;
+	background: #343540;
+	margin: 12px 0;
+	text-align: center;
+	padding: 20px;
 }
 
 section.content {
@@ -79,7 +80,7 @@ section.content {
 }
 
 header {
-	padding: 50px 0;
+	padding: 50px 0 0;
 
 	h1 {
 		margin: 0;
@@ -90,7 +91,7 @@ footer {
 	display: block;
 	background: #222;
 	color: #ccc;
-	padding: 1px 0;
+	padding: 3px 0 14px;
 
 	p {
 		font-size: 8pt;
@@ -103,5 +104,33 @@ footer {
 		&:hover {
 			color: #edff00;
 		}
+	}
+}
+
+.outline {
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+
+	font-size: 7pt;
+	font-weight: bold;
+	font-family: "Montserrat", helvetica, sans-serif, verdana;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+
+	padding: 12px 32px;
+	margin: 7px 4px 4px;
+
+	transition: all $transition ease;
+
+	&:hover {
+		color: #fff;
+		border-color: #fff;
+	}
+
+	.chartreuse {
+		color: #d6e41c;
+		border-color: #edff00;
+		background: transparent;
 	}
 }
