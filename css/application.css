@@ -1,9 +1,9 @@
 /*!
- *  FlatCSS 1.0.0 by @aguacatek - https://aguacatek.github.io/flatCSS/
- *  License - MIT License
+ *	FlatCSS 1.0.0 by @aguacatek - https://aguacatek.github.io/flatCSS/
+ *	License - MIT License
  */
-.flat {
-  font-size: 9pt;
+.flat,
+.outline {
   font-family: "Montserrat", helvetica, sans-serif, verdana;
   font-weight: 500;
   letter-spacing: 1pt;
@@ -13,13 +13,27 @@
   box-sizing: border-box;
   display: inline-block;
   margin: 7px 4px 4px;
-  padding: 17px 44px;
   min-width: 200px;
-  color: #fff;
   -webkit-transition: all 200ms ease;
           transition: all 200ms ease;
   border-radius: 0;
+}
+
+.flat:focus,
+.outline:focus {
+  outline: none;
+}
+
+.flat:hover,
+.outline:hover {
+  cursor: pointer;
+}
+
+.flat {
+  font-size: 9pt;
+  color: #fff;
   border: 0;
+  padding: 17px 44px;
   background-color: #888;
   box-shadow: 0px 3px 0 #6f6f6f;
 }
@@ -28,10 +42,6 @@
   background-color: #bbbbbb;
   box-shadow: 0px 3px 0 #a2a2a2;
   color: #555555;
-}
-
-.flat:focus {
-  outline: none;
 }
 
 .flat:hover {
@@ -104,17 +114,17 @@
   color: #1e7e86;
 }
 
-.flat.yellow {
+.flat.mustard {
   background-color: #e6b031;
   box-shadow: 0px 3px 0 #cb9619;
 }
 
-.flat.yellow:hover {
+.flat.mustard:hover {
   background-color: #cb9619;
   box-shadow: 0px 3px 0 #9e7413;
 }
 
-.flat.yellow:active {
+.flat.mustard:active {
   background-color: #f1d38c;
   box-shadow: 0px 3px 0 #ecc15e;
   color: #9e7413;
@@ -248,6 +258,87 @@
   color: #111111;
 }
 
+.outline {
+  border-width: 2px;
+  border-style: solid;
+  color: #aaa;
+  border-color: #aaa;
+  background: transparent;
+  font-size: 7pt;
+  padding: 14px 24px;
+}
+
+.outline.light-blue {
+  color: #8cc6fb;
+  border-color: #8cc6fb;
+}
+
+.outline.blue {
+  color: #1089f8;
+  border-color: #1089f8;
+}
+
+.outline.red {
+  color: #e95454;
+  border-color: #e95454;
+}
+
+.outline.cyan {
+  color: #58dbe5;
+  border-color: #58dbe5;
+}
+
+.outline.mustard {
+  color: #f5c555;
+  border-color: #f5c555;
+}
+
+.outline.purple {
+  color: #7a4dc4;
+  border-color: #7a4dc4;
+}
+
+.outline.green {
+  color: #79e376;
+  border-color: #79e376;
+}
+
+.outline.orange {
+  color: #ff925b;
+  border-color: #ff925b;
+}
+
+.outline.fucsia {
+  color: #ff0e55;
+  border-color: #ff0e55;
+}
+
+.outline.mint {
+  color: #53e298;
+  border-color: #53e298;
+}
+
+.outline.brown {
+  color: #c97647;
+  border-color: #c97647;
+}
+
+.outline.gray {
+  color: #675454;
+  border-color: #675454;
+}
+
+.outline.grey {
+  color: #675454;
+  border-color: #675454;
+}
+
+.outline:hover,
+.outline:active {
+  color: #fff;
+  border-color: #fff;
+}
+
 body, html {
   padding: 0;
   margin: 0;
@@ -288,6 +379,15 @@ code em {
   color: #ccc;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 14pt;
+  color: #ffcf5d;
+}
+
 ul {
   padding-left: 24px;
 }
@@ -325,16 +425,8 @@ section.content {
   text-align: left;
 }
 
-section.content h2 {
-  font-size: 14pt;
-}
-
 header {
-  padding: 50px 0 0;
-}
-
-header h1 {
-  margin: 0;
+  padding: 30px 0 0;
 }
 
 footer {
@@ -357,28 +449,7 @@ footer a:hover {
   color: #edff00;
 }
 
-.outline {
-  display: inline-block;
-  border-width: 1px;
-  border-style: solid;
-  font-size: 7pt;
-  font-weight: bold;
-  font-family: "Montserrat", helvetica, sans-serif, verdana;
-  text-transform: uppercase;
-  letter-spacing: 1pt;
-  padding: 12px 32px;
-  margin: 7px 4px 4px;
-  -webkit-transition: all 200ms ease;
-          transition: all 200ms ease;
-}
-
-.outline:hover {
-  color: #fff;
-  border-color: #fff;
-}
-
-.outline .chartreuse {
-  color: #d6e41c;
-  border-color: #edff00;
-  background: transparent;
+hr {
+  margin: 41px 0;
+  border-style: dashed;
 }

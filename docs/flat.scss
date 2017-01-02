@@ -1,6 +1,6 @@
 /*!
- *  FlatCSS 1.0.0 by @aguacatek - https://aguacatek.github.io/flatCSS/
- *  License - MIT License
+ *	FlatCSS 1.0.0 by @aguacatek - https://aguacatek.github.io/flatCSS/
+ *	License - MIT License
  */
 
 $f_sans_serif: helvetica, sans-serif, verdana;
@@ -13,7 +13,7 @@ $transition: 200ms;
 $blue: #116ec4;
 $red: #d73333;
 $cyan: #38c7d2;
-$yellow: #e6b031;
+$mustard: #e6b031;
 $purple: #64429c;
 $green: #5acf57;
 $orange: #f9722e;
@@ -21,63 +21,86 @@ $fucsia: #da0040;
 $mint: #34ce7e;
 $brown: #a0613d;
 $gray: #444;
-
 $light-blue: lighten( $blue, 25%);
 
 
 @mixin button-color( $name, $color )
 {
-  &.#{$name} {
-    background-color: $color;
-    box-shadow: 0px 3px 0 darken( $color, 10% );
-    &:hover {
-      background-color: darken( $color, 10% );
-      box-shadow: 0px 3px 0 darken( $color, 20% );
-    }
-    &:active {
-      background-color: lighten( $color, 20% );
-      box-shadow: 0px 3px 0 lighten( $color, 10% );
-      color: darken( $color, 20% );
-    }
-
-  }
+	$newColor: darken( $color, 10% );
+	&.#{$name} {
+		background-color: $color;
+		box-shadow: 0px 3px 0 $newColor;
+		&:hover
+		{
+			background-color: $newColor;
+			box-shadow: 0px 3px 0 darken( $color, 20% );
+		}
+		&:active
+		{
+			background-color: lighten( $color, 20% );
+			box-shadow: 0px 3px 0 lighten( $color, 10% );
+			color: darken( $color, 20% );
+		}
+	}
 }
 
-.flat {
-	$original-color: #888;
-	font-size: 9pt;
+@mixin button-outline-color( $name, $color )
+{
+	&.#{$name}
+	{
+		$newColor: saturate( lighten($color, 10%), 10%);
+		color: $newColor;
+		border-color: $newColor;
+	}
+}
+
+.flat,
+.outline
+{
 	font-family: $f_montserrat;
 	font-weight: 500;
 	letter-spacing: 1pt;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-
-    box-sizing: border-box;
+	box-sizing: border-box;
 	display: inline-block;
-    margin: 7px 4px 4px;
-	padding: 17px 44px;
-    min-width: 200px;
-	color: #fff;
+	margin: 7px 4px 4px;
+	min-width: 200px;
 	transition: all $transition ease;
-
 	border-radius: 0;
-	border: 0;
 
-	background-color: $original-color;
-	box-shadow: 0px 3px 0 darken( $original-color, 10% );
-
-    &:active {
-      background-color: lighten( $original-color, 20% );
-      box-shadow: 0px 3px 0 lighten( $original-color, 10% );
-      color: darken( $original-color, 20% );
-    }
-
-	&:focus {
+	&:focus
+	{
 		outline: none;
 	}
 
-	&:hover {
+	&:hover
+	{
+		cursor: pointer;
+	}
+}
+
+.flat
+{
+	$original-color: #888;
+	font-size: 9pt;
+	color: #fff;
+	border: 0;
+	padding: 17px 44px;
+	background-color: $original-color;
+	box-shadow: 0px 3px 0 darken( $original-color, 10% );
+
+		&:active
+		{
+			background-color: lighten( $original-color, 20% );
+			box-shadow: 0px 3px 0 lighten( $original-color, 10% );
+			color: darken( $original-color, 20% );
+		}
+
+
+	&:hover
+	{
 		cursor: pointer;
 		background-color: darken( $original-color, 10% );
 		box-shadow: 0px 3px 0 darken( $original-color, 20% );
@@ -87,7 +110,7 @@ $light-blue: lighten( $blue, 25%);
 	@include button-color( "blue", $blue );
 	@include button-color( "red", $red );
 	@include button-color( "cyan", $cyan );
-	@include button-color( "yellow", $yellow );
+	@include button-color( "mustard", $mustard );
 	@include button-color( "purple", $purple );
 	@include button-color( "green", $green );
 	@include button-color( "orange", $orange );
@@ -96,4 +119,37 @@ $light-blue: lighten( $blue, 25%);
 	@include button-color( "brown", $brown );
 	@include button-color( "gray", $gray );
 	@include button-color( "grey", $gray );
+}
+
+.outline
+{
+	$color: #aaa;
+	border-width: 2px;
+	border-style: solid;
+	color: $color;
+	border-color: $color;
+	background: transparent;
+	font-size: 7pt;
+	padding: 14px 24px;
+
+	@include button-outline-color( "light-blue", $light-blue );
+	@include button-outline-color( "blue", $blue );
+	@include button-outline-color( "red", $red );
+	@include button-outline-color( "cyan", $cyan );
+	@include button-outline-color( "mustard", $mustard );
+	@include button-outline-color( "purple", $purple );
+	@include button-outline-color( "green", $green );
+	@include button-outline-color( "orange", $orange );
+	@include button-outline-color( "fucsia", $fucsia );
+	@include button-outline-color( "mint", $mint );
+	@include button-outline-color( "brown", $brown );
+	@include button-outline-color( "gray", $gray );
+	@include button-outline-color( "grey", $gray );
+
+	&:hover,
+	&:active
+	{
+		color: #fff;
+		border-color: #fff;
+	}
 }

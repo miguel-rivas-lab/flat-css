@@ -1,4 +1,4 @@
-@import 'flat';
+@import '../docs/flat';
 
 body, html {
 	padding: 0;
@@ -40,6 +40,15 @@ code {
 	}
 }
 
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 14pt;
+	color: #ffcf5d;
+}
+
 ul {
 	padding-left: 24px;
 }
@@ -74,17 +83,11 @@ section.gallery {
 section.content {
 	text-align: left;
 
-	h2 {
-		font-size: 14pt;
-	}
 }
 
 header {
-	padding: 50px 0 0;
+	padding: 30px 0 0;
 
-	h1 {
-		margin: 0;
-	}
 }
 
 footer {
@@ -107,30 +110,7 @@ footer {
 	}
 }
 
-.outline {
-	display: inline-block;
-	border-width: 1px;
-	border-style: solid;
-
-	font-size: 7pt;
-	font-weight: bold;
-	font-family: "Montserrat", helvetica, sans-serif, verdana;
-	text-transform: uppercase;
-	letter-spacing: 1pt;
-
-	padding: 12px 32px;
-	margin: 7px 4px 4px;
-
-	transition: all $transition ease;
-
-	&:hover {
-		color: #fff;
-		border-color: #fff;
-	}
-
-	.chartreuse {
-		color: #d6e41c;
-		border-color: #edff00;
-		background: transparent;
-	}
+hr {
+	margin: 41px 0;
+    border-style: dashed;
 }
