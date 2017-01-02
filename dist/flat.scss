@@ -5,7 +5,6 @@
 
 $f_sans_serif: helvetica, sans-serif, verdana;
 $f_montserrat: 'Montserrat', $f_sans_serif;
-$f_bitter: 'Bitter', $f_sans_serif;
 
 $transition: 200ms;
 
@@ -69,6 +68,7 @@ $light-blue: lighten( $blue, 25%);
 	min-width: 200px;
 	transition: all $transition ease;
 	border-radius: 0;
+	padding: 17px 44px;
 
 	&:focus
 	{
@@ -87,16 +87,16 @@ $light-blue: lighten( $blue, 25%);
 	font-size: 9pt;
 	color: #fff;
 	border: 0;
-	padding: 17px 44px;
+	
 	background-color: $original-color;
 	box-shadow: 0px 3px 0 darken( $original-color, 10% );
 
-		&:active
-		{
-			background-color: lighten( $original-color, 20% );
-			box-shadow: 0px 3px 0 lighten( $original-color, 10% );
-			color: darken( $original-color, 20% );
-		}
+	&:active
+	{
+		background-color: lighten( $original-color, 20% );
+		box-shadow: 0px 3px 0 lighten( $original-color, 10% );
+		color: darken( $original-color, 20% );
+	}
 
 
 	&:hover
@@ -130,7 +130,6 @@ $light-blue: lighten( $blue, 25%);
 	border-color: $color;
 	background: transparent;
 	font-size: 7pt;
-	padding: 14px 24px;
 
 	@include button-outline-color( "light-blue", $light-blue );
 	@include button-outline-color( "blue", $blue );
